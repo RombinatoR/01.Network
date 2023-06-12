@@ -10,7 +10,7 @@ Here you can find the task: https://github.com/becodeorg/BXL-k4MK4r-1/blob/main/
 
 ![image](https://github.com/RombinatoR/building_a_simple_network/assets/133594002/429845d0-4dce-439e-94c3-29af803496ad)
 
-#### The 3 client PCs and the Web Server
+#### The 3 client PCs and the Web/DNS Server
 
 All 3 PCs have been granted respectively **192.168.1.10/24**, **192.168.1.11/24**, **192.168.1.12/24** addresses, and as default gateway, Router0 (**192.168.1.1** on interface g0/0/0)
 
@@ -21,6 +21,8 @@ Web Server has been given the last host address **192.168.1.254/24**; with, as d
 As a quick example for this simple network, I added a domain name *www.gandalf.com* and the address of that domain (on the same machine, so 192.168.1.254/24)
 
 ![image](https://github.com/RombinatoR/building_a_simple_network/assets/133594002/d2348a61-932c-44a0-b3a6-187b3624b493)
+
+Which means that, once the PCs and the server linked to the switch Switch0 (see below), it's possible for the PC to ping *www.gandalf.com* and the DNS server will translate the domain name to the address *192.168.1.254* thanks to the entry in its DNS cache (see above figure).
 
 #### Switch0
 
