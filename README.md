@@ -2,7 +2,7 @@
 
 ### Task description
 
-Here you can find the task: https://github.com/becodeorg/BXL-k4MK4r-1/blob/main/content/01.Network/00-Network_basics_(Pretraining)/projects/Build_simple_network.md
+Here you can find the task presentation: https://github.com/becodeorg/BXL-k4MK4r-1/blob/main/content/01.Network/00-Network_basics_(Pretraining)/projects/Build_simple_network.md
 
 ### Realisation
 
@@ -35,7 +35,8 @@ More interesting but still as simple as it could've been made. Two static routes
 - One that drives the incoming traffic to 192.168.1.0/24 through the interface g/0/0 (192.168.1.1/24)
 - One that drives the exiting traffic through the interface g/0/1. In practice, it'll just be a route to 0.0.0.0/0; the default route.
 
-
+Router0 is connected to "Cloud0" that just schematizes the outer world. 
+With the setup as described above, any packet that is not destined to inside the network, will be sent outwards.
 
 
 
